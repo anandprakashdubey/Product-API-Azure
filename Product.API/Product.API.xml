@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Product.API</name>
+    </assembly>
+    <members>
+        <member name="M:Product.API.Controllers.ProductController.CreateProduct(Product.Entities.Product)">
+            <summary>
+            Product API
+            </summary>
+            <param name="product"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
