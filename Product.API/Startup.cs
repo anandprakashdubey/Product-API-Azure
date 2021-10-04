@@ -73,7 +73,11 @@ namespace Product.API
 
             app.UseRouting();
 
+            app.UseCors(builder => builder
+            .AllowAnyOrigin());
+
             app.UseAuthorization();
+
 
             app.UseSwagger();
             app.UseSwaggerUI(setupAction =>
