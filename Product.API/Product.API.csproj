@@ -22,5 +22,9 @@
     <ProjectReference Include="..\Product.Repository\Product.Repository.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="InputFiles\" />
+  </ItemGroup>
+
 
 </Project>

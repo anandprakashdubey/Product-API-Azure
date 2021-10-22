@@ -1,0 +1,24 @@
+version: 0.0.1 #Required
+apimServiceName: ProductAPIMService-Dev #Required, must match name of an apim service deployed in the specified resource group
+apiVersionSets: #Optional
+  - id: ProductAPIVersionSet
+    displayName: ProductAPI
+    description: An API for product demo
+    versioningScheme: Query
+    versionQueryName: versionQuery
+    versionHeaderName: versionHeader
+apis:
+  - name: ProductAPI #Required
+    apiVersion: v1 #optional
+    apiVersionDescription: My first version #optional
+    apiVersionSetId: ProductAPIVersionSet #optional
+    apiRevision: 1
+    apiRevisionDescription: My first revision
+    openApiSpec: https://productapiarmartifacts.blob.core.windows.net/armartifacts/swagger.json
+    policy: https://productapiarmartifacts.blob.core.windows.net/armartifacts/api-policy.xml
+    suffix: productapisuffix
+    type: http
+    products: starter #Optional, adds api to the specified products
+outputLocation: D:\AzureADProject\Product\Product.API\InputFiles\CreaterFiles
+linked: true
+linkedTemplatesBaseUrl: https://productapiarmartifacts.blob.core.windows.net/armartifacts

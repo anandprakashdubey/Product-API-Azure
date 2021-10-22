@@ -1,0 +1,23 @@
+{
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentTemplate.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "ApimServiceName": {
+      "type": "string"
+    }
+  },
+  "resources": [
+    {
+      "properties": {
+        "apiVersionSetId": "[resourceId('Microsoft.ApiManagement/service/apiVersionSets', parameters('ApimServiceName'), 'ProductAPIVersionSet')]",
+        "path": "productapisuffix/098db797655e40afbb4954524d2b6e9e",
+        "value": "https://productapiarmartifacts.blob.core.windows.net/armartifacts/swagger.json",
+        "format": "openapi-link"
+      },
+      "name": "[concat(parameters('ApimServiceName'), '/ProductAPI')]",
+      "type": "Microsoft.ApiManagement/service/apis",
+      "apiVersion": "2021-01-01-preview",
+      "dependsOn": []
+    }
+  ]
+}
