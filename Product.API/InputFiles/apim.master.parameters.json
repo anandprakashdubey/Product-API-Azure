@@ -6,7 +6,7 @@
       "value": "ProductAPIMService-Dev"
     },
     "LinkedTemplatesBaseUrl": {
-      "value": "https://productapiarmartifacts.blob.core.windows.net/armartifacts"
+      "value": "https://productapiarmartifacts.blob.core.windows.net/armtemp"
     }
   },
   "resources": []
