@@ -20,7 +20,7 @@
       "properties": {
         "mode": "Incremental",
         "templateLink": {
-          "uri": "[concat(parameters('LinkedTemplatesBaseUrl'), 'CreaterFiles/ProductAPIMService-Dev-master.template.json')]",
+          "uri": "[concat(parameters('LinkedTemplatesBaseUrl'), '/CreaterFiles/ProductAPIMService-Dev-master.template.json')]",
           "contentVersion": "1.0.0.0"
         },
         "parameters": {
@@ -28,7 +28,7 @@
             "value": "[parameters('ApimServiceName')]"
           },
           "LinkedTemplatesBaseUrl": {
-            "value": "[concat(parameters('LinkedTemplatesBaseUrl'),'/CreaterFiles']"
+            "value": "[concat(parameters('LinkedTemplatesBaseUrl'),'/CreaterFiles')]"
           }
         }
       },
