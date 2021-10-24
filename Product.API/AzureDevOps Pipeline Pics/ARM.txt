@@ -1,0 +1,23 @@
+﻿ARM Deployment
+
+
+https://www.youtube.com/watch?v=4Sp2Qvmg6j8
+
+https://docs.microsoft.com/en-us/azure/api-management/devops-api-development-templates
+
+https://github.com/Azure/azure-api-management-devops-resource-kit
+
+********** To Generate ARM *********
+Download the creator and build and restore
+Run the below command
+
+dotnet run create --configFile  D:\AzureADProject\Product\Product.API\InputFiles\config.v1-rev1.yml
+
+where config.v1-rev1.yml file is config file
+
+and there is master template where it has all the inside template
+
+
+
+
+We have to define backend service as well and give Ocp-Apim-Subscription-Key also to make api call.
