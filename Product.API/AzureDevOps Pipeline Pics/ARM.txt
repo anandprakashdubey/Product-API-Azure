@@ -21,3 +21,19 @@ and there is master template where it has all the inside template
 
 
 We have to define backend service as well and give Ocp-Apim-Subscription-Key also to make api call.
+
+
+**** To Extract Config Files from Already Setup API *****
+
+If someone created APIM manually through portal and want to deploy the same api on another APIM instance then we can
+extract the API and its configuration and generate files and deploy, follow below steps
+
+run the command in command prompt of APIM Devops resource kit tool window
+
+dotnet run extract --sourceApimName contosoapim-dev --destinationApimName contosoapim --resourceGroup Api-Demo-West-US --filefolder /Users/anand/work/contosoapim-dev/templates/conf-api --apiName democonf --policyXMLBaseUrl https://apimdevops.blob.core.windows.net/armartifacts
+
+
+--sourceApimName  --> Extracting from this APIM instances
+--apiName   --> this particular api data
+
+
